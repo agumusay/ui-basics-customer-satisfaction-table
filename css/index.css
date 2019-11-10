@@ -5,104 +5,149 @@ html{
 *{
     box-sizing: border-box;
     font-family: 'Comfortaa', cursive;
-    font-size: 1.5rem;
+    font-size: 1rem;
     border-collapse: collapse;
 }
+
 body{
-    width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
-th, td {
-    padding: 10px;
-}
-th{
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    margin: 0;
-    padding: 0;
-    border-spacing: 0px;
-    border-collapse: collapse;
-    text-align: center;
+div{
+    width: 100vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    padding-left: 325px;
 }
 
-table thead tr {
-    height: 55px;
+caption{
+    position: absolute;
+    left: 0;
+    top: -23px;
+    font-size: 2rem;
+    border-bottom: 2px solid purple;
+    color: purple;
+}
+table {
+    position: relative;
+    width: 80%;
+    
 }
 
-table, thead, tbody, tr, td, th{
-    border-collapse: collapse;
-    border-bottom: 1px solid black;
-}
-tr{
-    height: 70px;
-}
-
-table tr td:nth-child(5), table tr td:nth-child(6){
-    width: 10%;
+tr:first-child td{
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-top: 2px solid rgba(163, 163, 163, 0.671);
+    padding: 10px 10px;
 }
 
-td:first-child{
-    font-size: 5rem;
+tr:last-child td{
+    border-bottom: 2px solid rgba(163, 163, 163, 0.671);
+}
+
+.icon-select{
+    font-size: 4rem;
     font-weight: 300;
     color: rgb(163, 163, 163);
 }
 
-td:first-child, th:first-child{
-    text-align: center;
-    padding-left: 20px;
-}
-
-td:nth-child(2), th:nth-child(2){
-    text-align: start;
-    padding-left: 30px;
-}
-
-td:nth-child(3), th:nth-child(3){
-    text-align: start;
-    padding-left: 30px;
-}
-td:nth-child(4), th:nth-child(4){
-    text-align: start;
-    padding-left: 30px;
-}
-
-thead table tr td {
-    padding-left: 30px;
+td{
+    border-top: 1px solid rgba(163, 163, 163, 0.671);
+    border-bottom: 1px solid rgba(163, 163, 163, 0.671);
     
 }
 
-th:nth-child(6), td:nth-child(5){
+
+
+td:first-child{
     text-align: center;
-    padding-left: 30px;   
+    padding-left: 10px;
+}
+
+td:nth-child(2){
+    text-align: center;
+    padding-left: 10px;
+    
+}
+
+td:nth-child(3){
+    text-align: start;
+    padding-left: 20px;
+}
+td:nth-child(4){
+    text-align: start;
+    padding-left: 20px;
+}
+
+td:nth-child(5){
+    text-align: end;
+    padding-left: 20px;
+}
+
+td:nth-child(6){
+    text-align: end;
+    padding-left: 20px;
 }
 
 td:nth-child(7){
     text-align: start;
-    padding-left: 30px;
-    padding-right: 20px;
+    padding-left: 20px;
 }
 
-td:nth-child(8), th:nth-child(7){
-    padding-left: 30px;
-    padding-right: 20px;
+td:nth-child(8){
+    text-align: end;
+    padding-left: 20px;
 }
 
-img{
+.avatar{
     width: 50px;
     border-radius: 50px;
-    overflow: hidden;
     border: 1px solid rgb(163, 163, 163);
+}
+
+.satisfaction{
+    width: 2rem;
+    padding-right: 5px;
 }
 
 button{
     font-weight: bold;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0);
     border: none;
-    font-size: 5rem;
-    
+    font-size: 4rem;
+    color: rgb(163, 163, 163);
+    padding: 0;
+    margin: 0;  
 }
+@media only screen and (min-width: 325px) {
+    div{
+        overflow-x: auto;
+        padding-left: 325px;
+    }
+  }
 
+@media only screen and (min-width: 400px) {
+    div{
+        overflow-x: auto;
+        padding-left: 250px;
+    }
+  }
+  @media only screen and (min-width: 500px) {
+    div{
+        overflow-x: auto;
+        padding-left: 150px;
+    }
+  }
+
+  @media only screen and (min-width: 640px) {
+    div{
+        overflow-x: auto;
+        padding-left: 0px;
+    }
+  }
